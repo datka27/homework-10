@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Homework</title>
+    <meta
+      name="viewport"
+      content="width=device-width,
+      initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="form-title">
+        Please fill required information down below so we can view your request!
+      </h2>
+      <form action="https://api.everrest.educata.dev/echo/json" method="post">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="Name"></label>
+            <input
+              type="text"
+              id="Name"
+              name="Name"
+              placeholder="Enter Name"
+              required
+            />
+            <span></span>
+          </div>
+          <div class="user-input-box">
+            <label for="subject"></label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Enter Subject"
+              required
+            />
+            <span></span>
+          </div>
+          <div class="user-input-box">
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Email"
+              required
+            />
+            <span></span>
+          </div>
+          <div class="user-input-box">
+            <label for="enterMessage"></label>
+            <textarea
+              name="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Enter Your Message"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
